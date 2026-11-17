@@ -8,7 +8,7 @@ Chaque utilisateur appartient à une **agence** et possède un **rôle**. Le rô
 |---|---|
 | **Administrateur** | Tous les droits sur les données de son agence, et la gestion des utilisateurs. |
 | **Manager** | Tous les droits sur les données de son agence : projets, dossiers, biens, tâches, contacts, corbeille. |
-| **Expert** | Travaille sur les projets auxquels il est associé. |
+| **Expert** | Crée ses propres projets et travaille sur ceux auxquels il est associé. |
 | **Partenaire externe** | Aucun accès à l'application pour le moment. |
 
 ## Ce que peut faire un expert
@@ -28,13 +28,15 @@ Sur ces projets :
 | Créer ou modifier un dossier ou un bien | ✅ | ✅ |
 | Supprimer le projet, un dossier ou un bien | — | ✅ |
 
+Un expert peut **créer un projet** : il en devient automatiquement le chef de projet. Il garde le droit de modifier et de supprimer les projets qu'il a créés, même si un manager en nomme ensuite un autre chef de projet.
+
 L'expert consulte également l'annuaire de l'agence (contacts, adresses, utilisateurs). Il peut créer des contacts et des adresses, mais ne modifie et ne supprime que ceux qu'il a créés.
 
 ## Ce que réservent les rôles Manager et Administrateur
 
 Seuls les managers et les administrateurs peuvent :
 
-- **créer un projet** ;
+- choisir ou changer le **chef de projet** d'un projet ;
 - gérer le **chiffre d'affaires** d'un projet et sa ventilation entre experts ;
 - **valider** un dossier d'expertise ;
 - choisir l'**expert** d'un dossier ;

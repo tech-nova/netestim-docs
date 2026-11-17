@@ -10,8 +10,8 @@ Pour retrouver un projet, saisissez son nom dans **Rechercher un projet**.
 
 ## Créer un projet
 
-!!! info "Réservé aux managers et administrateurs"
-    Les experts ne créent pas de projet. Ils y sont associés par un manager ou un administrateur. Voir [Rôles et droits](../prise-en-main/roles.md).
+!!! info "Expert : vous êtes le chef de projet"
+    Un expert peut créer un projet, dont il est automatiquement le chef de projet : le champ **Chef de projet** est alors en lecture seule. Seuls les managers et les administrateurs peuvent désigner un autre chef de projet. Voir [Rôles et droits](../prise-en-main/roles.md).
 
 1. Dans la liste des projets, cliquez sur **Nouveau Projet**.
 2. Renseignez les **informations générales** :
@@ -33,6 +33,8 @@ Pour retrouver un projet, saisissez son nom dans **Rechercher un projet**.
 Ouvrez le projet, puis choisissez **Modifier** dans le menu. Depuis la page **Modification du projet**, vous pouvez changer les informations générales, le donneur d'ordre et le propriétaire par défaut.
 
 ### Changer de chef de projet
+
+!!! info "Réservé aux managers et administrateurs"
 
 Si l'ancien chef de projet a encore des tâches ouvertes, Netestim vous propose deux options :
 
