@@ -1,0 +1,77 @@
+site_name: Documentation Netestim
+site_description: Guide d'utilisation de Netestim, le logiciel de gestion des expertises immobilières.
+site_url: https://tech-nova.github.io/netestim-docs/
+repo_url: https://github.com/tech-nova/netestim-docs
+repo_name: netestim-docs
+edit_uri: edit/main/docs/
+copyright: Netestim
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode clair
+
+plugins:
+  - search:
+      lang: fr
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Accueil: index.md
+  - Prise en main:
+      - prise-en-main/index.md
+      - Se connecter: prise-en-main/connexion.md
+      - L'interface: prise-en-main/interface.md
+      - Rôles et droits: prise-en-main/roles.md
+      - Personnaliser l'affichage: prise-en-main/personnalisation.md
+  - Guides:
+      - guides/index.md
+      - Projets: guides/projets.md
+      - Dossiers d'expertise: guides/dossiers.md
+      - Biens immobiliers: guides/biens.md
+      - Estimations: guides/estimations.md
+      - Tâches: guides/taches.md
+      - Contacts et adresses: guides/contacts-adresses.md
+      - Corbeille: guides/corbeille.md
+  - Administration:
+      - administration/index.md
+      - Utilisateurs: administration/utilisateurs.md
+      - Agences: administration/agences.md
+      - Modèles: administration/modeles.md
