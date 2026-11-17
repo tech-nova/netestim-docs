@@ -6,8 +6,8 @@ Chaque utilisateur appartient à une **agence** et possède un **rôle**. Le rô
 
 | Rôle | En résumé |
 |---|---|
-| **Administrateur** | Tous les droits sur les données de son agence, et la gestion des utilisateurs. |
-| **Manager** | Tous les droits sur les données de son agence : projets, dossiers, biens, tâches, contacts, corbeille. |
+| **Administrateur** | Tous les droits sur les données de son agence, la gestion de tous les comptes et des agences. |
+| **Manager** | Tous les droits sur les données de son agence : projets, dossiers, biens, tâches, contacts, corbeille, comptes des experts. |
 | **Expert** | Crée ses propres projets et travaille sur ceux auxquels il est associé. |
 | **Partenaire externe** | Aucun accès à l'application pour le moment. |
 
@@ -43,7 +43,7 @@ Seuls les managers et les administrateurs peuvent :
 - consulter le **tableau de bord** de l'agence ;
 - gérer la **corbeille** de toute l'agence.
 
-L'administrateur gère en plus les **comptes utilisateurs**. Personne ne peut supprimer son propre compte.
+Les managers gèrent aussi les **comptes** des experts et partenaires externes de leur agence ; l'administrateur gère tous les comptes et les agences. Voir [Utilisateurs](../administration/utilisateurs.md).
 
 !!! question "Il vous manque un droit ?"
     Adressez-vous au manager ou à l'administrateur de votre agence : il peut vous associer à un projet ou faire évoluer votre rôle.
