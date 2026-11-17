@@ -36,4 +36,4 @@ Si vous restez inactif un moment, Netestim **verrouille votre session** par séc
 
 ## Se déconnecter
 
-Ouvrez le menu de votre profil (votre avatar, en haut à droite), puis cliquez sur le bouton de déconnexion, en bas du menu.
+Ouvrez le menu de votre profil (votre avatar, en haut à droite), puis cliquez sur **Se déconnecter**, en bas du menu.
