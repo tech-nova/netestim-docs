@@ -15,12 +15,30 @@ Pour le détail des droits de chaque rôle sur les projets, dossiers et biens, v
 
 ## Importer un projet
 
-L'import recrée un projet complet à partir de l'archive ZIP produite par l'export d'un projet : dossiers, biens, surfaces, estimations, commentaires, documents, contacts et ventilation du CA.
+L'import recrée un projet complet à partir de son export : dossiers, biens, surfaces, estimations, commentaires, documents, contacts et ventilation du CA. Il sert à restaurer un projet supprimé définitivement : le projet garde son identifiant d'origine.
 
-1. Dans la liste des projets, cliquez sur le bouton d'import, à côté de **Nouveau Projet**.
-2. Choisissez l'archive ZIP.
-3. Vérifiez l'aperçu : Netestim affiche le nombre d'éléments de chaque type et signale les documents absents de l'archive.
-4. Confirmez. Un récapitulatif indique ce qui a été créé et les documents qui n'ont pas pu être repris.
+L'import est refusé si :
+
+- le projet appartient à une autre agence que la vôtre ;
+- un projet avec le même identifiant existe déjà, y compris dans la corbeille.
+
+### Quel fichier importer
+
+Le bouton **Exporter le projet (ZIP)**, sur la page d'un projet, produit une **archive ZIP**. Elle contient les données du projet, dans un fichier `project-<identifiant>.json`, ainsi que les fichiers de ses documents.
+
+| Fichier importé | Données | Fichiers des documents |
+|---|:---:|:---:|
+| **Archive ZIP** (recommandé) | ✅ | ✅ réimportés |
+| **Fichier JSON** extrait de l'archive | ✅ | — |
+
+Avec le fichier JSON seul, les documents sont recréés mais renvoient vers leurs fichiers d'origine : ils ne s'ouvriront que si ces fichiers existent encore. Préférez l'archive ZIP.
+
+### Étapes
+
+1. Dans la liste des projets, cliquez sur **Importer un projet**.
+2. Choisissez l'archive ZIP ou le fichier JSON.
+3. Vérifiez l'aperçu : Netestim affiche le nombre d'éléments de chaque type et, pour une archive ZIP, signale les documents dont le fichier manque.
+4. Cliquez sur **Importer les données**. Un récapitulatif indique ce qui a été créé et, pour une archive ZIP, les fichiers qui n'ont pas pu être repris.
 
 Les tâches standard du projet importé sont créées en même temps.
 
